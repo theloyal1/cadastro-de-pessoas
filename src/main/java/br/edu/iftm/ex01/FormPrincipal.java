@@ -20,10 +20,13 @@ public class FormPrincipal extends javax.swing.JFrame {
      */
     
     GerenciaPessoa gerpes = new GerenciaPessoa();
-    DefaultTableModel modelo = new DefaultTableModel();
+    private DefaultTableModel modelo;
     
     public FormPrincipal() {
         initComponents();
+        String[] titulos = {"Nome", "Sexo", "Data de nasc.", "CEP", "Uni. fed.", "Gostos", "Resumo"};
+        modelo = new DefaultTableModel(titulos, 0);
+        jtPessoas.setModel(modelo);
     }
 
     /**
@@ -317,10 +320,13 @@ public class FormPrincipal extends javax.swing.JFrame {
         p.setResumo(jtaResumo.getText());
         
         gerpes.cadastrar(p);
-        jtPessoas.setModel(modelo);
-        Object[] dados = {p.getNome(), p.getSexo(), p.getDataNasc(), p.getCep(), p.getUniFed(), p.getGostos(), p.getResumo()};
-        modelo.addRow(dados);
+        modelo.addRow(new String[]{p.getNome(), p.getSexo(), p.getDataNasc().toString(), p.getCep(), p.getUniFed(), "xxxx", p.getResumo()});
         JOptionPane.showMessageDialog(this, "Cadastrado com sucesso!");
+        jtfTextoNome.setText("");
+        dpDataNasc.setText("");
+        jtfTextoCep.setText("");
+        jcbUniFeds.setSelectedIndex(0);
+        jtaResumo.setText("");
     }//GEN-LAST:event_jbCadastrarActionPerformed
 
     private void jbExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExcluirActionPerformed
