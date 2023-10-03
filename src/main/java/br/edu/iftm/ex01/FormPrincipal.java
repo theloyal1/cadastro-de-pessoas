@@ -323,9 +323,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         modelo.addRow(new String[]{p.getNome(), p.getSexo(), p.getDataNasc().toString(), p.getCep(), p.getUniFed(), "xxxx", p.getResumo()});
         JOptionPane.showMessageDialog(this, "Cadastrado com sucesso!");
         jtfTextoNome.setText("");
+        grpSexo.clearSelection();
         dpDataNasc.setText("");
         jtfTextoCep.setText("");
         jcbUniFeds.setSelectedIndex(0);
+        jcbBaladas.setSelected(false);
+        jcbBeber.setSelected(false);
+        jcbFilmes.setSelected(false);
+        jcbMusica.setSelected(false);
         jtaResumo.setText("");
     }//GEN-LAST:event_jbCadastrarActionPerformed
 
