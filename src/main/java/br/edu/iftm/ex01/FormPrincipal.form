@@ -127,13 +127,17 @@
                   <Component id="jcbFilmes" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jcbBeber" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jcbBaladas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="3" groupAlignment="3" attributes="0">
-                      <Component id="jlaSexo" alignment="3" max="32767" attributes="0"/>
-                      <Component id="jrbMasc" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                       <Component id="jrbFem" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jlaSexo" alignment="3" max="32767" attributes="0"/>
+                          <Component id="jrbMasc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jcbBeber" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jcbBaladas" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">

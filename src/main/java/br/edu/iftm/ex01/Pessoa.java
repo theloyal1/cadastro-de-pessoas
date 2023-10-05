@@ -20,7 +20,7 @@ public class Pessoa {
         this.gostos = new ArrayList<>();
     }
 
-    public Pessoa(String nome, String cep, String uniFed, String resumo, String sexo, DatePicker dataNasc) {
+    public Pessoa(String nome, String cep, String uniFed, String resumo, String gostos, String sexo, DatePicker dataNasc) {
         this.nome = nome;
         this.cep = cep;
         this.uniFed = uniFed;
